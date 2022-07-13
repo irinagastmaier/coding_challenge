@@ -2,7 +2,7 @@ import { ScrollView, View } from 'react-native';
 import MultipleChoice from 'react-native-multiple-choice-picker';
 import { useForm, Controller } from 'react-hook-form';
 
-const ProfileInfoLipoScreen = () => {
+const ProfileInfoLipoScreen = ({ navigation }) => {
   const {
     control,
     handleSubmit,

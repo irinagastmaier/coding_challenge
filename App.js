@@ -24,14 +24,3 @@ const App = () => {
 
 export default App;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    //    position: relative,
-    width: '375px',
-    height: '812px',
-    backgroundColor: '#F3F5F7',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

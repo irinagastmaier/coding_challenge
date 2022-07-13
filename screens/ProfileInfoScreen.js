@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { useForm, Controller } from 'react-hook-form';
-import DateTimePicker from '@react-native-community/datetimepicker';
+//import DatePicker from 'react-native-date-picker';
 import DropDownPicker from 'react-native-dropdown-picker';
 
-const ProfileInfoScreen = () => {
+const ProfileInfoScreen = ({ navigation }) => {
   const [date, setDate] = useState(new Date());
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState(null);
@@ -114,7 +114,7 @@ const ProfileInfoScreen = () => {
           {errors.geschlecht}
         </View>
         <View>
-          <View>
+          {/* <View>
             <Text>
               Geburtsdatum <Text>*</Text>
             </Text>
@@ -125,20 +125,31 @@ const ProfileInfoScreen = () => {
               required: true,
             }}
             render={({ field: { onChange, onBlur, value } }) => (
-              <RNDateTimePicker
-                display="spinner"
-                date={date}
-                onDateChange={setDate}
-                maximumDate={new Date(2300, 10, 20)}
-                minimumDate={new Date(1920, 0, 1)}
-                onBlur={onBlur}
-                onChangeText={onChange}
-                value={value}
-              />
+              <>
+                <Button title="Open" onPress={() => setOpen(true)} />
+                <DatePicker
+                  modal
+                  mode="date"
+                  date={date}
+                  open={open}
+                  onConfirm={(date) => {
+                    setOpen(false);
+                    setDate(date);
+                  }}
+                  onCancel={() => {
+                    setOpen(false);
+                  }}
+                  maximumDate={new Date(2300, 10, 20)}
+                  minimumDate={new Date(1920, 0, 1)}
+                  onBlur={onBlur}
+                  onChangeText={onChange}
+                  value={value}
+                />
+              </>
             )}
             name="geburtsdatum"
           />
-          {errors.geburtsdatum}
+          {errors.geburtsdatum} */}
         </View>
         <View>
           <View>

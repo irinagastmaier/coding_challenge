@@ -1,20 +1,14 @@
+//navigation
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { StyleSheet, View } from 'react-native';
+// hooks
+import { StyleSheet } from 'react-native';
+//components
+import ProfileInfoLipoScreen from './screens/ProfileInfoLipoScreen';
+import ProfileInfoScreen from './screens/ProfileInfoScreen';
+import WelcomeScreen from './screens/WelcomeScreen';
 
 const Stack = createNativeStackNavigator();
-
-const WelcomeScreen = () => {
-  return <View>Welcome Screen</View>;
-};
-
-const ProfileInfoScreen = () => {
-  return <View>Profi lInfo Screen</View>;
-};
-
-const ProfileInfoLipoScreen = () => {
-  return <View>Profil Info Lipo Screen</View>;
-};
 
 const App = () => {
   return (

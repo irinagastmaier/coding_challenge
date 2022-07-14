@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-
+    width: '375px',
     height: '812px',
   },
   title: {

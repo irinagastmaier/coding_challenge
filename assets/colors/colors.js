@@ -1,6 +1,6 @@
 const colors = {
-  Brandprimary: '#123454',
-  Brandsecondary: '#D93F66',
+  brandPrimary: '#123454',
+  brandSecondary: '#D93F66',
   fontPrimary: '#0D1A26',
   fontSecondary: '#123454',
   borderPrimary: '#AEB3B7',
@@ -9,5 +9,4 @@ const colors = {
   white: '#FFFFFF',
   black: '#000000',
 };
-
 export default colors;
